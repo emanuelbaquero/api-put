@@ -1,5 +1,6 @@
 FROM ubuntu:latest
 
+WORKDIR /opt/airflow/logs
 
 RUN apt update 
 
@@ -16,6 +17,9 @@ RUN pip install Werkzeug==0.16.1
 RUN pip install pandasql
 RUN pip install boto3
         
+COPY echo.sh echo.sh
+COPY start.sh start.sh
 
+CMD ["bash", "start.sh"]
 
 

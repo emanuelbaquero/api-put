@@ -1,1 +1,1 @@
-echo "hola" >> holaMundo.txt
+echo "hola" >> /opt/airflow/logs/finishADF
