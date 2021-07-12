@@ -30,7 +30,7 @@ class finishADF(Resource):
 
         print('hola')
 
-        subprocess.call(['/home/echo.sh'],shell=True)
+        subprocess.call(['/opt/airflow/logs/echo.sh'],shell=True)
 
         return {'Result':'Ok'}
 
